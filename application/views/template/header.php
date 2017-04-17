@@ -10,7 +10,7 @@
 		<div class="head-action-login">
 			<div id="head-call-guide">스냅 소개</div>
 			<?php if(isset($_SESSION['loggedin'])){ ?>
-				<div id="head-call-login"><a href="users/account">안녕하세요님</a></div>
+				<div id="head-call-login"><a href="users/account"><?php echo $user['username']; ?></a></div>
 				<div id="head-call-logout"><a href="users/logout">로그아웃</a></div>
 			<?php } else { ?>
 				<div id="head-call-login"><a href="users/login">로그인</a></div>
