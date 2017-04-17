@@ -1,1 +1,1 @@
-Hello Snaphers footer.
+이곳은 푸터이구요
