@@ -1,1 +1,2 @@
-이곳은 푸터이구요
+<div style="position: relative;">
+</div>
