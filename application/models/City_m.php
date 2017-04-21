@@ -60,7 +60,7 @@ class City_m extends CI_Model {
     }
 
     public function insert($data) {
-        $data['created_at'] = $data['updated_at'] = date('Y-m-d H:i:s');
+        //$data['created_at'] = $data['updated_at'] = date('Y-m-d H:i:s');
         //$data['created_from_ip'] = $data['updated_from_ip'] = $this->input->ip_address();
 
         $success = $this->db->insert($this->table_name, $data);

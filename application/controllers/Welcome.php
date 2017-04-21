@@ -21,14 +21,16 @@ class Welcome extends CI_Controller {
 	function __construct() {
 	  parent::__construct();
 	  $this->load->model('user');
+	  $this->load->model(array('City_m'));
 	}
 
 	public function index()
 	{
 		$data['user'] = $this->user->getRows(array('id'=>$this->session->userdata('userId')));
-
+		$data['list'] = $this->City_m->get_all();
 		$this->load->view('template/header', $data);
 		$this->load->view('welcome_message');
+	  $this->load->view('city_view', $data);
 		$this->load->view('template/footer');
 	}
 }

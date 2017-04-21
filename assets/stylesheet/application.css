@@ -1,4 +1,4 @@
-@import url('fonts.googleapis.com/earlyaccess/nanumgothic.css');
+@import url("http://fonts.googleapis.com/earlyaccess/nanumgothic.css");
 
 *{
 	font-family: 'NanumGothic', 'proxima nova', helvetica, arial, 'AppleGothic', 'spoqa', 'NanumSquare', dotum, sans-serif;
@@ -149,4 +149,49 @@ span{
 	height: 100%;
 	border: 0;
 	padding: 0 5px;
+}
+
+.main-city-area{
+	position: relative;
+	width: 100%;
+	max-width: 970px;
+	margin: 30px auto 0 auto;
+}
+
+
+.image-wrapper{
+	width: 300px;
+	height: 250px;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	background-size: cover;
+	display: inline-grid;
+	margin: 10px;
+	overflow-y: hidden;
+	vertical-align: middle;
+}
+
+.image-wrapper:hover{
+	opacity: .8;
+	cursor: pointer;
+}
+
+.image-title{
+	width: 100%;
+	padding-top: 150px;
+	text-align: center;
+	margin: auto;
+}
+
+.image-title p{
+	margin: 0 5px;
+}
+
+.image-title p:nth-child(1){
+	color: white;
+	font-size: 28px;
+}
+
+.image-title p:nth-child(2){
+	color: white;
+	font-size: 14px;
 }

@@ -4,6 +4,7 @@
 	<title>SNAPHERS</title>
 	<link rel="stylesheet" href="/assets/stylesheet/application.css" type="text/css"/>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="/assets/javascript/main.js"></script>
 </head>
 <body>
 	<div class="head-area">

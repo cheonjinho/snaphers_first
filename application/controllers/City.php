@@ -34,22 +34,27 @@ class City extends CI_Controller {
 	}
 
 	public function upload_city() {
-		$data['user'] = $this->user->getRows(array('id'=>$this->session->userdata('userId')));
-		$this->load->view('template/header', $data);
 		$this->load->view('upload_file');
-		$this->load->view('template/footer');
 	}
 
 	public function create() {
     $form_data = $this->input->post();
-    $this->load->model(array('city_m'));
+    $this->load->model(array('City_m'));
     if (0 != count($form_data)) {
       $this->City_m->insert($form_data['city']);
       $data['list'] = $this->City_m->get_all();
-      redirect('');
+      redirect('City/list');
     } else {
       print_r('Created failed');
     }
 	}
+
+	public function list()
+    {
+      $this->load->model(array('City_m'));
+      $data['list'] = $this->City_m->get_all();
+      $this->load->view('template/header');
+	    $this->load->view('city_view', $data);
+    }
 
 }
